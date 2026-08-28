@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bella Cucina | Italian Restaurant</title>
+<style>
+  :root {
+    --primary: #7a2e2e;
+    --accent: #d4af37;
+    --bg: #fdf6ec;
+    --text: #2b2b2b;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  header {
+    background: var(--primary);
+    color: #fff;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+  }
+
+  nav a:hover {
+    color: var(--accent);
+  }
+
+  .hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 6rem 2rem;
+  }
+
+  .hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--text);
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+  }
+
+  .btn:hover {
+    transform: translateY(-3px);
+  }
+
+  section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  section h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 2rem;
+  }
+
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  .menu-item {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    text-align: center;
+  }
+
+  .menu-item h4 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+  }
+
+  .menu-item .price {
+    color: var(--accent);
+    font-weight: bold;
+    margin-top: 0.5rem;
+    display: block;
+  }
+
+  .about {
+    background: #fff;
+  }
+
+  .about p {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  footer {
+    background: var(--primary);
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  footer p {
+    margin: 0.3rem 0;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Bella Cucina</h1>
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h2>Authentic Italian Flavors</h2>
+  <p>Fresh ingredients, timeless recipes, unforgettable evenings.</p>
+  <a href="#contact" class="btn">Reserve a Table</a>
+</div>
+
+<section id="menu">
+  <h3>Our Favorites</h3>
+  <div class="menu-grid">
+    <div class="menu-item">
+      <h4>Margherita Pizza</h4>
+      <p>San Marzano tomatoes, fresh mozzarella, basil.</p>
+      <span class="price">$14</span>
+    </div>
+    <div class="menu-item">
+      <h4>Spaghetti Carbonara</h4>
+      <p>Guanciale, pecorino, egg, black pepper.</p>
+      <span class="price">$16</span>
+    </div>
+    <div class="menu-item">
+      <h4>Tiramisu</h4>
+      <p>Mascarpone, espresso-soaked ladyfingers, cocoa.</p>
+      <span class="price">$8</span>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h3>Our Story</h3>
+  <p>Founded in 1998, Bella Cucina brings the heart of Italy to your table. Every dish is crafted with love, using recipes passed down through generations and ingredients sourced from trusted local farms.</p>
+</section>
+
+<footer id="contact">
+  <p>Bella Cucina Ristorante</p>
+  <p>123 Trattoria Lane, Little Italy</p>
+  <p>Open Tue–Sun, 11am – 10pm</p>
+</footer>
+
+</body>
+</html>
